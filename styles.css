@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #4CAF50; /* Green color representing health and growth */
+    --text-color: #2C3E50; /* Dark blue for text, providing good contrast and readability */
+    --light-text: #34495E; /* Slightly lighter dark blue for secondary text */
+    --font-secondary: #95A5A6; /* Grey for secondary elements */
+    --light-bg: #ECF0F1; /* Light grey background for a clean look */
+}
+
+body {
+    font-family: 'Rokkitt', serif;
+    background-color: #f4f4f4;
+    color: var(--text-color);
+}
+
+.flex {
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 7%;
+    background: var(--light-bg);
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav h1 a {
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-family: 'Titan One', cursive;
+}
+
+nav h1 span {
+    color: var(--text-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--main-color);
+}
+
+.bgSection {
+    background: var(--light-bg);
+    margin-top: 80px;
+}
+
+section {
+    padding: 0 7%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--light-bg);
+    text-align: center;
+}
+
+.heroDiv {
+    max-width: 600px;
+}
+
+.heroDiv h1 {
+    font-size: 3rem;
+    color: var(--font-secondary);
+    margin-bottom: 1rem;
+}
+
+.heroDiv span {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.heroDiv p {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.heroDiv button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.heroDiv button:hover {
+    background-color: #388E3C;
+}
+
+.heroImg {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.heroImg img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Remove these lines to eliminate the circles */
+li {
+    font-size: 1rem;
+    width: 8em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.5s;
+    margin: 0.8em;
+}
+/* General Styles for Forms */
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add margin to ensure content is not hidden behind fixed nav */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rokkitt", serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 7%;
+    box-sizing: border-box;
+    background: var(--light-bg);
+    align-items: center;
+    z-index: 1000; /* Ensures nav stays on top */
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 120px auto 20px; /* Adds top margin to push content below the fixed nav */
+    padding: 20px;
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensures form container is above other content */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    padding: 10px;
+    background: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.form-container button:hover {
+    background: hsl(120, 46%, 28%);
+}
