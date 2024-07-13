@@ -244,3 +244,62 @@ nav {
 .form-container button:hover {
     background: hsl(120, 46%, 28%);
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rokkitt", serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 7%;
+    box-sizing: border-box;
+    background: var(--light-bg);
+    align-items: center;
+    z-index: 1000;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 120px auto 20px; /* Adjusted margin for visibility */
+    padding: 20px;
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.dashboard-widgets {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.widget {
+    flex: 1 1 30%;
+    background: var(--light-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.widget h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.widget p {
+    color: var(--text-color);
+}
